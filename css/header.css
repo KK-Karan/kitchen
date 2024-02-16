@@ -1,0 +1,158 @@
+header{
+    top:0;
+    max-width: 1400px;
+    z-index: 9999;
+}
+.container{
+    max-width: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-left:0.5rem;
+    padding-right:0.5rem;
+    padding-bottom:0.5rem;
+  }
+
+
+.header__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: white;
+}
+
+.header__content::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header{
+   color: black;
+   font-family: 'Heebo', sans-serif;
+   font-weight: 600;
+   padding: 0;
+   margin-bottom: 0;
+}
+
+#check{
+    display: none;
+}
+.header__link{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333333;
+    font-size: 1rem;
+    line-height: 2.25rem;
+    cursor: pointer;
+}
+
+.header__link:focus{
+    color: red;
+}
+
+.links__div{
+    width: 30rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon{
+    position: absolute;
+    font-size: 2rem;
+    right: 1rem;
+    cursor: pointer;  
+    color:black;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+}
+
+@media screen and (max-width: 638px){
+   .icon{
+    display: inline-flex;
+   }
+
+   #check:checked ~ .icon #menu__icon{
+    display: none;
+   }
+
+   #check:checked ~ .icon #close__icon{
+    display: block;
+   }
+
+   .links__div{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition:0.4s ease;
+   }
+
+
+
+  .a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transform: translate(0px);  
+
+  }
+
+  #check:checked ~.links__div{
+    height:100vh;
+    background-color: white;
+   }
+
+  .icon #close__icon{
+    display: none;
+  }
+
+
+}
+
+@media screen and (min-width: 768px){
+    .header__link{
+        font-size: 1.25rem;
+        
+    }
+
+    .links__div{
+        width: 35rem;
+    }
+    
+}
+
+@media screen and (min-width: 1024px){
+    .header__link{
+        font-size: 1.5rem;
+        
+    }
+
+    .links__div{
+        width: 43.9375rem;
+    }
+
+    header{
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+
+    
+}

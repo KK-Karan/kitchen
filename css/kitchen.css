@@ -1,0 +1,66 @@
+.kitchen__image{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.kitchen__container {
+    position: relative;
+}
+
+.kitchen__overlay {
+    text-align: center;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 50%; /* Adjust this value to position text vertically */
+    left: 30%; /* Adjust this value to position text horizontally */
+    transform: translate(-50%, -50%); /* Center text horizontally and vertically */
+    background-color: rgba(36, 34, 34, 0.7); /* Background color with transparency */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+
+.kitchen__text {
+    font-size: 30px; /* Adjust font size as needed */
+    font-weight: bold; /* Adjust font weight as needed */
+    color: white; /* Text color */
+}
+
+.kitchen__infoText{
+    max-width: 1000px;
+    padding:2rem;
+    line-height: normal;
+    font-size: 18px;
+    
+}
+
+.kitchen__gallery{
+    width: 100%;
+    height: auto;
+    background-color: rgba(36, 34, 34, 0.7);
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.gallery__images{
+    max-width: 440px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.gallery__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap:16px;
+    
+}

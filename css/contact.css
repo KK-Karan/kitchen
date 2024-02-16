@@ -1,0 +1,106 @@
+.contact__page{
+    width: 100%;
+    height: auto;
+    background-color: #303030;
+    padding-bottom: 60px;
+    margin-top: 2rem;
+}
+.contact__text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:36px;
+}
+
+.contact__instruction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__field{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+    justify-content: center;
+    align-items: center;
+} 
+
+input{
+    width: 220px;
+    border:none;
+    outline:none;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid black;
+
+}
+
+textarea{
+    border:none;
+    outline:none;
+    border-radius: 12px;
+    border:2px solid black;
+    width:480px;
+
+}
+
+button{
+    background-color:grey;
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.submit__button{
+    padding:12px;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    cursor:pointer;
+    color: white;
+    background-color: #171717;
+    border: 2px solid white;
+}
+
+.email__info{
+    width: 98%;
+}
+
+.contact__us{
+    font-size: 3rem;
+    color:white;
+}
+
+.contact__description{
+    font-size: 1.5rem;
+    color:white;
+}
+
+input::placeholder , textarea::placeholder{
+    padding-left: 1rem;
+    font-family: 'Poppins' , sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search__icon{
+    margin: 2rem;
+}
+
+@media (max-width:503px) {
+    .contact__text{
+        flex-direction: column;
+    }
+
+    
+
+    textarea{
+        width: 220px;
+    }
+
+}
