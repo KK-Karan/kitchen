@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/info.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/testimonial.css">
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <header class="header__content container ">
@@ -43,7 +44,7 @@
       <a href="./assets/The-Residential-Brochure.pdf" class="header__link">Brochure</a>
     </nav>
   </header>
-    <section class="img-slider">
+    <!-- <section class="img-slider">
       <div class="slider-container">
         
         <div class="slide">
@@ -58,6 +59,24 @@
           <img src="./assets/kitchen4.jpg">
         </div>
         
+      </div>
+    </section> -->
+
+    <section aria-label="Newest Photos">
+      <div class="carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <ul data-slides>
+          <li class="slide" data-active>
+            <img src="./assets/kitchen2.jpg" alt="Nature Image #1">
+          </li>
+          <li class="slide">
+            <img src="./assets/kitchen3.jpg" alt="Nature Image #2">
+          </li>
+          <li class="slide">
+            <img src="./assets/kitchen4.jpg" alt="Nature Image #3">
+          </li>
+        </ul>
       </div>
     </section>
  
